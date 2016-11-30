@@ -1,6 +1,6 @@
 ﻿//
 //  File Name: AssemblyInfo.cs
-//  Project Name: Dumper
+//  Project Name: Crypto
 //
 //  Created by Alexandro Luongo on 30/11/2016.
 //  Copyright © 2016 Alexandro Luongo. All rights reserved.
@@ -13,11 +13,11 @@ using System.Runtime.InteropServices;
 // Le informazioni generali relative a un assembly sono controllate dal seguente 
 // set di attributi. Modificare i valori di questi attributi per modificare le informazioni
 // associate a un assembly.
-[assembly: AssemblyTitle("Dumper")]
+[assembly: AssemblyTitle("Crypto")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Dumper")]
+[assembly: AssemblyProduct("Crypto")]
 [assembly: AssemblyCopyright("Copyright © 2016 - Alexandro Luongo")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -28,7 +28,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Se il progetto viene esposto a COM, il GUID seguente verrà utilizzato come ID della libreria dei tipi
-[assembly: Guid("675d1184-0001-4de1-8bbf-b3fa46022228")]
+[assembly: Guid("e634c738-e13e-49f8-9eae-c132692af6b0")]
 
 // Le informazioni sulla versione di un assembly sono costituite dai seguenti quattro valori:
 //

@@ -13,15 +13,31 @@ using System.IO.Compression;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace Dumper
+namespace PwnFast
 {
-    class Program
+    /// <summary>
+    /// Dumper: Utility to extract API keys from signed PokeFast APKs.
+    /// </summary>
+    internal class Dumper
     {
+        /// <summary>
+        /// DIRECTORY: Name of the directory to look the APKs for.
+        /// </summary>
         private static readonly string DIRECTORY = "Files";
+
+        /// <summary>
+        /// DESTINATION: Name of the file which will contain the extracted API keys.
+        /// </summary>
         private static readonly string DESTINATION = "Keys.txt";
 
+        /// <summary>
+        /// Keys: A list of API keys.
+        /// </summary>
         private static List<string> Keys;
 
+        /// <summary>
+        /// Print informations, initialize global variables.
+        /// </summary>
         private static void Init()
         {
             Console.WriteLine("PwnFast - PokeFast Cracking Utility");
@@ -33,6 +49,10 @@ namespace Dumper
             Directory.CreateDirectory(DIRECTORY);
         }
 
+        /// <summary>
+        /// Entry point of the application.
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             Init();
@@ -42,11 +62,17 @@ namespace Dumper
             StayOpen();
         }
 
+        /// <summary>
+        /// Empty loop to keep the application alive.
+        /// </summary>
         private static void StayOpen()
         {
             while (true) ;
         }
 
+        /// <summary>
+        /// Scan for PokeFast APKs and perform dumping operations.
+        /// </summary>
         private static async void DumpKeys()
         {
             Console.WriteLine(string.Format("Loading APKs inside \"{0}\" folder...", DIRECTORY));
@@ -77,6 +103,11 @@ namespace Dumper
             Environment.Exit(0);
         }
 
+        /// <summary>
+        /// Scan a PokeFast APK and dump its dynamic API key.
+        /// </summary>
+        /// <param name="APK">Name of the APK to scan.</param>
+        /// <returns></returns>
         private static async Task DumpKey(string APK)
         {
             try
