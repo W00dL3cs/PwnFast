@@ -14,5 +14,5 @@ Utility used to extract API keys from signed PokeFast APKs.
 ![alt tag](http://i.imgur.com/qeavOqN.png)
 
 ## Crypto
-Library containing the latest PokeFast encryption algorithm.
+Library containing the latest PokeFast encryption algorithm. <br>
 Can be used in order to create valid requests from third-party clients.
